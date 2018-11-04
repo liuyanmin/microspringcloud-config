@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+spring:
+  profiles: dev  #开发环境
+  application:
+    name: microspringcloud-config-dev
+---
+spring:
+  profiles: test
+  application:
+    name: microspringcloud-config-test
+
+# 清保存为 UTF-8格式
