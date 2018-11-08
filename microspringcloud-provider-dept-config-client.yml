@@ -19,7 +19,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.94.2.188:3306/clouddb01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
     username: root
-    password: liuyanmin152453
+    password: 
 eureka:
   client:
     service-url:
@@ -53,7 +53,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.94.2.188:3306/clouddb02?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
     username: root
-    password: liuyanmin152453
+    password: 
 eureka:
   client:
     service-url:
@@ -87,7 +87,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://47.94.2.188:3306/clouddb03?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
     username: root
-    password: liuyanmin152453
+    password: 
 eureka:
   client:
     service-url:
