@@ -1,0 +1,105 @@
+spring:
+  profiles:
+    active:
+    - dev
+---
+server:
+  port: 8001
+
+mybatis:
+  config-location:
+  - classpath:mybatis.xml
+  type-aliases-package: com.lym.springcloud.*.entity
+  mapper-locations:
+  - classpath:com/lym/springcloud/**/mapper/*.xml
+spring:
+  profiles: dev
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.94.2.188:3306/clouddb01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: liuyanmin152453
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com/eureka/
+  instance:
+    instance-id: microspringcloud-dept-config-client-8001
+    prefer-ip-address: true
+
+info:
+  app:
+    name: microspringcloud-dept
+  build:
+    groupId: com.lym.springcloud
+    artifactId: microspringcloud-provider-dept-config-client-8001
+    version: 1.0
+
+---
+server:
+  port: 8001
+
+mybatis:
+  config-location:
+  - classpath:mybatis.xml
+  type-aliases-package: com.lym.springcloud.*.entity
+  mapper-locations:
+  - classpath:com/lym/springcloud/**/mapper/*.xml
+spring:
+  profiles: test
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.94.2.188:3306/clouddb02?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: liuyanmin152453
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com/eureka/
+  instance:
+    instance-id: microspringcloud-dept-config-client-8001
+    prefer-ip-address: true
+
+info:
+  app:
+    name: microspringcloud-dept
+  build:
+    groupId: com.lym.springcloud
+    artifactId: microspringcloud-provider-dept-config-client-8001
+    version: 1.0
+
+---
+server:
+  port: 8001
+
+mybatis:
+  config-location:
+  - classpath:mybatis.xml
+  type-aliases-package: com.lym.springcloud.*.entity
+  mapper-locations:
+  - classpath:com/lym/springcloud/**/mapper/*.xml
+spring:
+  profiles: prod
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.94.2.188:3306/clouddb03?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: liuyanmin152453
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7001.com/eureka/
+  instance:
+    instance-id: microspringcloud-dept-config-client-8001
+    prefer-ip-address: true
+
+info:
+  app:
+    name: microspringcloud-dept
+  build:
+    groupId: com.lym.springcloud
+    artifactId: microspringcloud-provider-dept-config-client-8001
+    version: 1.0
