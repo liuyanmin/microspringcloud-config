@@ -7,8 +7,7 @@ server:
   port: 8001
 
 mybatis:
-  config-location:
-  - classpath:mybatis.xml
+  config-location: classpath:mybatis.xml
   type-aliases-package: com.lym.springcloud.*.entity
   mapper-locations:
   - classpath:com/lym/springcloud/**/mapper/*.xml
@@ -20,6 +19,7 @@ spring:
     url: jdbc:mysql://47.94.2.188:3306/clouddb01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&failOverReadOnly=false&zeroDateTimeBehavior=convertToNull
     username: root
     password: liuyanmin152453
+
 eureka:
   client:
     service-url:
@@ -41,8 +41,7 @@ server:
   port: 8001
 
 mybatis:
-  config-location:
-  - classpath:mybatis.xml
+  config-location: classpath:mybatis.xml
   type-aliases-package: com.lym.springcloud.*.entity
   mapper-locations:
   - classpath:com/lym/springcloud/**/mapper/*.xml
@@ -75,8 +74,7 @@ server:
   port: 8001
 
 mybatis:
-  config-location:
-  - classpath:mybatis.xml
+  config-location: classpath:mybatis.xml
   type-aliases-package: com.lym.springcloud.*.entity
   mapper-locations:
   - classpath:com/lym/springcloud/**/mapper/*.xml
@@ -97,9 +95,7 @@ eureka:
     prefer-ip-address: true
 
 info:
-  app:
-    name: microspringcloud-dept
-  build:
-    groupId: com.lym.springcloud
-    artifactId: microspringcloud-provider-dept-config-client-8001
-    version: 1.0
+  app.name: microspringcloud-dept
+  build.groupId: com.lym.springcloud
+  build.artifactId: microspringcloud-provider-dept-config-client-8001
+  build.version: 1.0
